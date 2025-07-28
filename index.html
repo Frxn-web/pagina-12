@@ -1,18 +1,11 @@
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="es">
-<head> 
-    <meta name="monetag" content="c1679a6f818c2602b38a7591f14b849f">
-    <meta name="2d42891f7142e3c290fc35bd55eac3b9b9d24626" content="2d42891f7142e3c290fc35bd55eac3b9b9d24626" />
-    <meta name="referrer" content="no-referrer-when-downgrade" />
-    <meta name="clckd" content="afbbb97e5568c6398787d8a845535c1b" />
+<head>
+    <meta name="monetag" content="bd3e76f9b15ca1226a63916eb8f6966c">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>⚽ FutbolLatino Pro - Noticias Deportivas en Vivo</title>
     <meta name="description" content="Las mejores noticias de fútbol, transferencias, resultados en vivo de Argentina, Brasil, México, Colombia y toda Latinoamérica. ¡No te pierdas nada!">
-    
-    <!-- Monetag Ad Script -->
-    <script src="https://fpyf8.com/88/tag.min.js" data-zone="159380" async data-cfasync="false"></script>
-    
     <style>
         * {
             margin: 0;
@@ -41,10 +34,13 @@
 
         .banner-top {
             text-align: center;
-            padding: 10px;
+            padding: 15px;
             background: rgba(255,255,255,0.1);
             margin-bottom: 10px;
-            min-height: 90px; /* Reserve space for the ad */
+            min-height: 120px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
         .nav-container {
@@ -218,22 +214,22 @@
             padding-bottom: 8px;
         }
 
-        /* Banner 300x250 en sidebar */
-        .banner-sidebar {
+        /* Banner spaces */
+        .banner-sidebar, .banner-content {
             text-align: center;
-            min-height: 250px; /* Reserve space for the ad */
+            padding: 20px;
+            background: #f8f9fa;
+            border: 2px dashed #ddd;
+            border-radius: 10px;
+            min-height: 280px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
 
-        /* Native Ad Spaces */
-        .native-ad {
-            background: #f8f9fa;
-            border: 1px dashed #ddd;
-            border-radius: 8px;
-            padding: 20px;
-            margin: 20px 0;
-            text-align: center;
-            color: #666;
-            font-style: italic;
+        .banner-content {
+            margin: 30px 0;
+            min-height: 200px;
         }
 
         /* Social Bar (fixed bottom) */
@@ -244,11 +240,11 @@
             right: 0;
             background: linear-gradient(45deg, #667eea, #764ba2);
             color: white;
-            padding: 10px;
+            padding: 15px;
             text-align: center;
             z-index: 1000;
             box-shadow: 0 -2px 10px rgba(0,0,0,0.3);
-            min-height: 50px; /* Reserve space for social bar ad */
+            min-height: 80px;
         }
         
         .social-bar-content {
@@ -284,6 +280,15 @@
             font-size: 0.8rem;
         }
 
+        /* Ad Container Styles */
+        .ad-container {
+            margin: 20px 0;
+            padding: 10px;
+            background: rgba(255,255,255,0.9);
+            border-radius: 8px;
+            text-align: center;
+        }
+
         /* Responsive Design */
         @media (max-width: 768px) {
             .container {
@@ -305,7 +310,11 @@
             }
             
             .social-bar {
-                padding: 5px;
+                padding: 10px;
+            }
+
+            .banner-top {
+                min-height: 100px;
             }
         }
 
@@ -330,24 +339,19 @@
             margin-right: 5px;
             font-size: 1.2rem;
         }
-    </style>
 
+        /* Body padding for fixed social bar */
+        body {
+            padding-bottom: 100px;
+        }
+    </style>
 </head>
 <body>
     <!-- Header with Top Banner Space -->
     <header class="header">
         <div class="banner-top">
-            <!-- Ad Script 728x90 -->
-            <script type="text/javascript">
-                atOptions = {
-                    'key' : '02090fec7a6e8cb50d42f55af517ac6d',
-                    'format' : 'iframe',
-                    'height' : 90,
-                    'width' : 728,
-                    'params' : {}
-                };
-            </script>
-            <script type="text/javascript" src="//needleunderstandtraveller.com/02090fec7a6e8cb50d42f55af517ac6d/invoke.js"></script>
+            <!-- Tu nuevo script de publicidad en el header -->
+            <script src="https://fpyf8.com/88/tag.min.js" data-zone="159965" async data-cfasync="false"></script>
         </div>
         <nav class="nav-container">
             <div class="logo">⚽ FutbolLatino Pro</div>
@@ -369,10 +373,9 @@
                 <p class="hero-subtitle">Noticias, transferencias y resultados en tiempo real</p>
             </section>
 
-            <!-- In-Page Push Ad Space -->
-            <div class="native-ad">
-                <script async="async" data-cfasync="false" src="//needleunderstandtraveller.com/c350e688c4e52385ac0b4b1c27c2229e/invoke.js"></script>
-                <div id="container-c350e688c4e52385ac0b4b1c27c2229e"></div>
+            <!-- Anuncio después del hero -->
+            <div class="banner-content">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="159965" async data-cfasync="false"></script>
             </div>
 
             <div class="news-grid">
@@ -402,6 +405,11 @@
                     </div>
                 </article>
 
+                <!-- Anuncio entre noticias -->
+                <div class="ad-container">
+                    <script src="https://fpyf8.com/88/tag.min.js" data-zone="159965" async data-cfasync="false"></script>
+                </div>
+
                 <!-- News Card 3 -->
                 <article class="news-card">
                     <div class="news-image">💰</div>
@@ -428,24 +436,19 @@
                     </div>
                 </article>
             </div>
+
+            <!-- Anuncio al final del contenido principal -->
+            <div class="banner-content">
+                <script src="https://fpyf8.com/88/tag.min.js" data-zone="159951" async data-cfasync="false"></script>
+            </div>
         </main>
 
         <!-- Sidebar -->
         <aside class="sidebar">
-            <!-- Banner 300x250 -->
+            <!-- Banner en sidebar -->
             <div class="sidebar-widget">
                 <div class="banner-sidebar">
-                    <!-- Ad Script 300x250 -->
-                    <script type="text/javascript">
-                        atOptions = {
-                            'key' : '172e95cd768f7c568242310cf2c69e6f',
-                            'format' : 'iframe',
-                            'height' : 250,
-                            'width' : 300,
-                            'params' : {}
-                        };
-                    </script>
-                    <script type="text/javascript" src="//needleunderstandtraveller.com/172e95cd768f7c568242310cf2c69e6f/invoke.js"></script>
+                    <script src="https://fpyf8.com/88/tag.min.js" data-zone="159965" async data-cfasync="false"></script>
                 </div>
             </div>
 
@@ -459,6 +462,13 @@
                     <li class="trending-item"><span class="trending-number">4</span><span>Mercado de fichajes invierno</span></li>
                     <li class="trending-item"><span class="trending-number">5</span><span>Mundial 2026: Todo lo que sabemos</span></li>
                 </ul>
+            </div>
+
+            <!-- Otro anuncio en sidebar -->
+            <div class="sidebar-widget">
+                <div class="banner-sidebar">
+                    <script src="https://fpyf8.com/88/tag.min.js" data-zone="159965" async data-cfasync="false"></script>
+                </div>
             </div>
 
             <!-- Quick Stats -->
@@ -485,24 +495,10 @@
     <!-- Social Bar (Fixed Bottom) -->
     <div class="social-bar">
         <div class="social-bar-content">
-            <!-- Social Bar Ad Script -->
-            <script type='text/javascript' src='//needleunderstandtraveller.com/d9/aa/4c/d9aa4c110fa950c20500c0fc6f24a7e2.js'></script>
+            <!-- Tu script en la barra social -->
+            <script src="https://fpyf8.com/88/tag.min.js" data-zone="159965" async data-cfasync="false"></script>
         </div>
     </div>
-
-    <!-- Pop Under Script -->
-    <script>
-    (function(drhoe){
-    var d = document,
-        s = d.createElement('script'),
-        l = d.scripts[d.scripts.length - 1];
-    s.settings = drhoe || {};
-    s.src = "//nocturnal-minimum.com/c.Du9Y6Zbu2y5nlaSSWGQI9ZN/j_UHyENKjtkqz/MCC/0e2ENaToIa2UOOTEMmxa";
-    s.async = true;
-    s.referrerPolicy = 'no-referrer-when-downgrade';
-    l.parentNode.insertBefore(s, l);
-    })({})
-    </script>
 
 </body>
 </html>
